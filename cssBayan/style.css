@@ -8,7 +8,7 @@ body {
 }
 
 .contentBlock {
-    background-color: #eee;
+    background-color: #FFF5EE;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -16,7 +16,60 @@ body {
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
+    font-size: 18px;
+    transition: height 2s;
+}
+
+img {
+    width: 400px;
+    object-fit: cover;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #FFF5EE;
+    display: none;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.active,
+.contentBlock:hover {
+    background-color: #b8b3b3;
+}
+
+
+.contentBlock:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+body {
+    background-color: #fff5ee;
+}
+
+.mainDiv {
+    margin: auto;
+    width: 80%;
+}
+
+.contentBlock {
+    background-color: #fff5ee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
     font-size: 18px;
 }
 
@@ -27,20 +80,21 @@ img {
 
 .panel {
     padding: 0 18px;
-    background-color: white;
-    display: none;
+    background-color: #fff5ee;
+    display: block;
     overflow: hidden;
     text-align: center;
+    height: 0;
+    transition: height 0.5s;
 }
 
 .active,
 .contentBlock:hover {
-    background-color: #ccc;
+    background-color: #b8b3b3;
 }
 
-
-.btnBlock:after {
-    content: '\02795';
+.contentBlock:after {
+    content: "\02795";
     font-size: 13px;
     color: #777;
     float: right;
