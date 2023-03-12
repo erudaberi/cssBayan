@@ -2,6 +2,11 @@ body {
     background-color: #FFF5EE;
 }
 
+.mainDiv {
+    margin: auto;
+    width: 80%;
+}
+
 .contentBlock {
     background-color: #eee;
     color: #444;
@@ -12,6 +17,7 @@ body {
     border: none;
     outline: none;
     transition: 0.4s;
+    font-size: 18px;
 }
 
 img {
