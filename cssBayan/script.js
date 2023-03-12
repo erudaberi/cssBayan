@@ -1,9 +1,8 @@
-var acc = document.getElementsByClassName("btnBlock");
+var acc = document.getElementsByClassName("contentBlock");
 for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
-        пше
         this.classList.toggle("active");
-        var panel = this.nextElementSibling;
+        let panel = this.nextElementSibling;
         if (panel.style.display === "block") {
             panel.style.display = "none";
         } else {
