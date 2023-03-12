@@ -14,11 +14,17 @@ body {
     transition: 0.4s;
 }
 
+img {
+    width: 400px;
+    object-fit: cover;
+}
+
 .panel {
     padding: 0 18px;
     background-color: white;
     display: none;
     overflow: hidden;
+    text-align: center;
 }
 
 .active,
